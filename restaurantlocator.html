@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+	<head>
+		<title>
+			Restaurant Locator
+		</title>
+		<meta name="viewport" content="width=device-width, initial-scale= 1">
+		<meta charset="utf-8">
+		<meta description="this is the website for the restaurant locator which will help you in finding out the restaurant in your location">
+		<link rel= "stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+  		<script type="text/javascript" charset="utf-8" src="js/jquery.leanModal.min.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css">
+		<link rel="stylesheet" href="style/styles.css">
+    <script type="text/javascript" src="js/geolocation.js"></script>
+	<script language="JavaScript">
+<!--
+
+// (C) 2003 CodeLifter.com
+// Free for all users, but leave in this  header
+
+// =======================================
+// set the following variables
+// =======================================
+
+// Set speed (milliseconds)
+var speed = 7000
+
+// Specify the image files
+var Pic = new Array() // don't touch this
+// to add more images, just continue
+// the pattern, adding to the array below
+
+Pic[0] = 'images/bg4.jpg'
+Pic[1] = 'images/bg5.jpg'
+Pic[2] = 'images/bg6.jpg'
+Pic[3] = 'images/bg7.jpg'	
+Pic[4] = 'images/bg8.jpg'
+
+// =======================================
+// do not edit anything below this line
+// =======================================
+
+var t
+var j = 0
+var p = Pic.length
+
+var preLoad = new Array()
+for (i = 0; i < p; i++){
+   preLoad[i] = new Image()
+   preLoad[i].src = Pic[i]
+}
+
+function runBGSlideShow(){
+   if (document.body){
+   document.body.background = Pic[j];
+   j = j + 1
+   if (j > (p-1)) j=0
+   t = setTimeout('runBGSlideShow()', speed)
+   }
+}
+
+//-->
+</script>	
+	</head>
+	<body onload="runBGSlideShow()">
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="restaurantlocator.html"><img src ="images/logo.png" alt="restaurant locator"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="restaurantlocator.html">Home</a></li>
+       </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        <!--<li><a href="register.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>-->
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="container">
+	<div class="jumbotron" style="margin-top: 200px; vertical-align: middle; opacity: 0.8;">
+		<h1> Welcome to Restaurant Locator </h1>
+
+	<p> Now finding the restaurant is much more easy. Are you foodie? Are you new to the city?</p>
+	<p> We are the ultimate solution to your problem, just click on the locate restaurant and type in your present city and location thats all. "ABRA-KA-DABRA"</p>
+	<p> We will provide you various potions to choose the best possible restaurant available in the city.</p>
+	<a href="location.html"><button type="button" class="btn btn-info btn-block"><strong><img id="button" src="images/lr_converted.png"></strong></button></a>
+	</div>     	
+</div>	
+		
+	</body>
+</html>
