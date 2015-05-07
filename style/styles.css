@@ -1,0 +1,26 @@
+body{
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+ 	font-family: 'Open Sans',Arial,Helvetica,Sans-Serif;
+ 	background-attachment: fixed;
+}
+img{
+	margin-top: -10px;
+	border-radius: 21px;
+}
+
+#button{
+	margin-top:  3px;
+	border-radius: 20px;
+	background-color: 
+}
+
+@media max-width (480px){
+
+	#select2{
+
+		max-width: 50%;
+	}
+}
